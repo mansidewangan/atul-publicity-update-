@@ -244,8 +244,8 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 
 @media (max-width: 767px) {
   dialog {
-    width: 90%;
-    height: 90%; 
+    width: 80%;
+    height: 80%; 
   }
   .portfolio-image-modal {
     height: auto;
@@ -256,7 +256,11 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 }
 @media (max-width: 767px){
   .app-modal-content {
-    height: auto; /* Adjust the modal content height for smaller screens */
+    height: 100%; 
+  }
+  .gallery-detail-container img{
+    height: 70%;
+    width: 70%;
   }
 }
 
@@ -274,26 +278,29 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 }
 
 .prev{
-  margin-right: 22rem;
+  margin-right: 28rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 10rem;
+  font-size: 8rem;
   align-items: center;
   color: #FFFFFF;
 }
 .next
  {
-  margin-left: 22rem;
+  margin-left: 28rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 10rem;
+  font-size: 8rem;
   align-items: center;
   color: #FFFFFF;
 }
 .close-btn{
   font-size: 4rem;
+  color: white;
+  background-color: transparent;
+  border: none;
 
 }
 
@@ -304,26 +311,40 @@ dialog:-internal-dialog-in-top-layer::backdrop {
 }
 @media screen and (max-width: 768px) {
   .button-container {
-    bottom: 5%; /* Adjust the distance from the bottom */
+    bottom: 50%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .prev,
   .next {
-    font-size: 8vw; /* Adjust the font size based on the viewport width */
-    margin-left: 22rem;
+    font-size: 8vw; 
 
   }
 
+}
+
+@media screen and (max-width: 1118px){
+
   .prev {
-    margin-right: 10vw; /* Adjust the margin based on the viewport width */
+    margin-right: 18rem; 
   }
 
   .next {
-    margin-left: 10vw; /* Adjust the margin based on the viewport width */
+    margin-left: 18rem; 
   }
 
   .close-btn {
-    font-size: 3vw; /* Adjust the font size based on the viewport width */
+    font-size: 3vw; 
+  }
+}
+@media screen and (max-width: 556px){
+  .prev {
+    margin-right: 12rem 
+  }
+
+  .next {
+    margin-left: 12rem; 
   }
 }
 
