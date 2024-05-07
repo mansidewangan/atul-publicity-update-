@@ -50,7 +50,7 @@ function footerDesign(){
                                         <!-- <i class="fa-solid fa-location-dot"></i> -->
                                     </div>
                                     <p class="us">Call Us!</p>
-                                    <a href="tel:"><span style="color: #FFFFFF"><p>(+91) 9644136511 (+91) 9406200210</p></span></a>
+                                    <span style="color: #FFFFFF"><p>(+91) 9644136511 (+91) 9406200210</p></span>
                                 </div>
                                 <div class="email">
                                     <div class="icon-boxF">

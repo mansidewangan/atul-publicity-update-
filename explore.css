@@ -193,12 +193,25 @@ input{
 
 /* ------print media open--------- */
 
-
+.print-image{
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .portfolio-detail h1{
   font-size: 5rem;
   padding: 6rem;
   padding-bottom: 0;
   font-family: "Unbounded";
+}
+@media (max-width: 767px){
+  .portfolio-detail h1{
+    font-size: 2.6rem;
+    padding-top: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    font-family: "Unbounded";
+  }
 }
 /* masonry layout open  */
 .masonry-layout {
@@ -215,18 +228,40 @@ input{
     cursor: pointer;
     margin-bottom: 30px;
   }
+  @media (max-width: 767px){
+    .masonry-layout figure img {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+    .masonry-layout {
+      padding:0;
+      columns: 1 300px;
+      column-gap: 0;
+      margin: 0 auto;
+    }
+  }
+
 
 /* masonry layout close  */
   /* -----modal open----- */
 dialog {
-  width: 60%;
-  height: 75%;
+  width: 55%;
+  height: 70%;
   margin: auto;
   background-color: transparent;
   border: 1px solid transparent;
   animation: fade-out 0.3s ease-out;
 }
+dialog::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+dialog[open] {
+  animation: fade-in 0.3s ease-out;
+}
 
+dialog[open]::backdrop {
+  animation: backdrop-fade-in 0.7s ease-out forwards;
+}
 dialog:-internal-dialog-in-top-layer::backdrop {
   position: fixed;
   inset: 0px;
@@ -240,20 +275,40 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   margin-left: auto;
   margin-right: auto;
 }
+.portfolio-image-modal {
+  height: 90%;
+  width: 90%;
+}
+/* .dialog .gallery-detail-container img{
+
+} */
+#portfolio-single-image-view-container {
+  width: 100%;
+  max-width: 100%; /* Screen ke width jitna hona chahiye */
+  height: auto; /* Height ko auto rakho ki vah width ke according adjust kare */
+  display: flex;
+  justify-content: center;
+}
+
 
 
 @media (max-width: 767px) {
   dialog {
     width: 80%;
-    height: 80%; 
+    /* height: 80%;  */
+    overflow-y: hidden;
   }
   .portfolio-image-modal {
     height: auto;
   }
+  .dialog .gallery-detail-container img{
+
+  }
 }
-.app-modal-content {
+
+/* .app-modal-content {
   position: relative;
-}
+} */
 @media (max-width: 767px){
   .app-modal-content {
     height: 100%; 
@@ -274,7 +329,6 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .prev{
@@ -297,11 +351,14 @@ dialog:-internal-dialog-in-top-layer::backdrop {
   color: #FFFFFF;
 }
 .close-btn{
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   background-color: transparent;
   border: none;
-
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  left: 60%;
 }
 
 .prev:hover,
@@ -315,7 +372,16 @@ dialog:-internal-dialog-in-top-layer::backdrop {
     justify-content: space-between;
     align-items: center;
   }
-
+  .close-btn{
+    font-size: 3rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    /* z-index: 10; */
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+  }
   .prev,
   .next {
     font-size: 8vw; 
