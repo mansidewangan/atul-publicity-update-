@@ -645,7 +645,7 @@
 .grid-item i {
     color: #F58634;
     padding-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 
 .grid-item h3 {
@@ -701,15 +701,6 @@
 }
 /* Services- close */
 
-
-/* ----------------------------- */
-/* MASONRY LAYOUT START */
-/* ----------------------------- */
-
-  /* ----------------------------- */
-  /* MASONRY LAYOUT END */
-  /* ----------------------------- */
-  
 
 /* portfolio open */
 
@@ -774,14 +765,14 @@
 }
 
 .news h3, .radio h3, .award h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #FFFFFF;
+    padding-top: 2rem;
 }
 @media (max-width: 769px) {
-    .news,
-    .radio,
-    .award {
-        display: none; 
+    .news
+     {
+        display: none;
     }
     .work {
         font-size: 3rem;
@@ -793,9 +784,9 @@
         display: block;
     }
     .news h3, .radio h3, .award h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: #FFFFFF;
-        padding-top: 5rem;        
+        padding-top: 5rem;               
     }
 }
 
@@ -868,10 +859,22 @@
     padding-left: 3rem;
     padding-right: 3rem;
     margin: 0.5rem;
+    display: inline;
     padding: 0.7rem;
     font-family: "Unbounded";
-    float: left;
-    
+    float: left; 
+}
+@media screen and (max-width:765px){
+    .news button , .radio button , .award button {
+        border-radius: 2rem;
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 0;
+        padding: 0;
+        font-family: "Unbounded";
+        /* float: left;  */
+    }
 }
 .news button:hover , .radio button:hover , .award button:hover{
     background-color: #F58634;

@@ -16,6 +16,9 @@ dialogElem.onclick = function () {
   dialogElem.close();
 };
 
+
+
+
 let currentImageIndex = 0;
 let images = [];
 

@@ -57,7 +57,7 @@ function footerDesign(){
                                         <!-- <i class="fa-solid fa-envelope"></i> -->
                                     </div>
                                     <p class="us">Mail Us:</p>
-                                    <a href=""><span style="color: #FFFFFF"><p>info@atulpublicity.com</p></span></a>
+                                    <span style="color: #FFFFFF"><p>info@atulpublicity.com</p></span>
                                 </div>
                                 <div class="location">
                                     <div class="icon-boxF">
@@ -77,7 +77,7 @@ function footerDesign(){
     <div class="footer-bottom">
         <div class="footer-block2">
             <div class="footer-copy">
-                <p class="footer-copy1">Copyright  © <a href="index.html"> <span style="color: #F58634;">atulpublicity </span></a>
+                <p class="footer-copy1">Copyright  ©  <span style="color: #F58634;">atulpublicity </span>
                     2024
                     All Right Reserved.
                 </p>
